@@ -1,0 +1,28 @@
+POST-RUN CHECK, NOT A SCORE. What the app did, case by case:
+
+scan ph19 (hawaii_county_hi)
+  image model said: identified, label "old yellow and silver cylindrical batteries"
+  the screen asked: We think this is: old yellow and silver cylindrical batteries. Is that right?
+  engine was asked "old yellow and silver cylindrical batteries": answer, drop_off_special; rules cited: hc-hhw-010
+  sites listed: f-hc-01 (for hc-hhw-010); f-hc-02 (for hc-hhw-010); f-hc-04 (for hc-hhw-010); f-hc-03 (for hc-hhw-010)
+
+scan ph22 (austin_tx)
+  image model said: multiple, candidates "banana peel", "apple core"
+  the screen asked: This photo shows more than one item. Which one do you mean?
+  no question was sent to the engine
+
+scan ph24 (seattle_wa)
+  image model said: multiple, candidates "aluminum drink can", "clear plastic water bottle"
+  the screen asked: This photo shows more than one item. Which one do you mean?
+  no question was sent to the engine
+
+scan ph36 (austin_tx)
+  image model said: identified, label "plastic drinking straws"
+  the screen asked: We think this is: plastic drinking straws. Is that right?
+  engine was asked "plastic drinking straws": answer, garbage; rules cited: atx-plastic-007
+  sites listed: none
+
+locator lc28-haw (hawaii_county_hi)
+  engine was asked "clear water bottle with no HI-5 label": conditional; rules cited: hc-plastic-006, hc-plastic-011, hc-plastic-012
+  sites listed: f-hc-06 (for hc-plastic-011); f-hc-07 (for hc-plastic-012)
+

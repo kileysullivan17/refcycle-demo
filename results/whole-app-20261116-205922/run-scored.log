@@ -1,0 +1,140 @@
+
+== RefCycle whole-app scored run 20261116-205922: main e08e617; keys: /Users/kileysullivan/refcycle-builds/refcycle-private/frozen-2026-11-05; results: /Users/kileysullivan/refcycle-builds/refcycle-scored/review/results/whole-app-20261116-205922
+
+== Installing harness packages (npm ci) and checking the keys
+OK   camera-scan.key.csv
+OK   locator.key.csv
+OK   recyclopedia.key.csv
+OK   photos (36 files, concatenated in order)
+
+== Installing engine and app packages (npm ci)
+
+added 13 packages in 781ms
+npm warn install-scripts 2 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.27.7 (postinstall: node install.js)
+npm warn install-scripts   fsevents@2.3.3 (install: (install scripts present))
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+
+added 14 packages in 657ms
+npm warn install-scripts 2 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.27.7 (postinstall: node install.js)
+npm warn install-scripts   fsevents@2.3.3 (install: (install scripts present))
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+
+== Starting the engine (anthropic/claude-sonnet-5-5) from engine/
+
+== Starting the app (image model anthropic/claude-sonnet-5-5; demo limits off for this run, 127.0.0.1 only)
+
+== Running the harness (test and held_out cases, repeats 1)
+[1/94] recyclopedia rp11-sea r1: answer recycle_bin (9.6 s)
+[2/94] recyclopedia rp12-aus r1: answer recycle_bin (8.1 s)
+[3/94] recyclopedia rp13-haw r1: answer deposit_return (9.1 s)
+[4/94] recyclopedia rp14-sea r1: answer recycle_bin (10.1 s)
+[5/94] recyclopedia rp15-aus r1: answer recycle_bin (14.7 s)
+[6/94] recyclopedia rp16-haw r1: answer drop_off_special (9.7 s)
+[7/94] recyclopedia rp17-sea r1: answer garbage (9.6 s)
+[8/94] recyclopedia rp18-aus r1: answer drop_off_special (9.1 s)
+[9/94] recyclopedia rp19-haw r1: answer garbage (18.6 s)
+[10/94] recyclopedia rp20-sea r1: answer recycle_bin (8.6 s)
+[11/94] recyclopedia rp21-aus r1: answer recycle_bin (7.6 s)
+[12/94] recyclopedia rp22-haw r1: answer garbage (10.1 s)
+[13/94] recyclopedia rp23-sea r1: answer recycle_bin (8.2 s)
+[14/94] recyclopedia rp24-aus r1: answer recycle_bin (10.6 s)
+[15/94] recyclopedia rp25-haw r1: answer deposit_return (9.1 s)
+[16/94] recyclopedia rp26-sea r1: answer recycle_bin (8.7 s)
+[17/94] recyclopedia rp27-aus r1: answer recycle_bin (11.6 s)
+[18/94] recyclopedia rp28-haw r1: answer recycle_bin (7.6 s)
+[19/94] recyclopedia rp29-sea r1: answer recycle_bin (9.6 s)
+[20/94] recyclopedia rp30-aus r1: answer recycle_bin (9.1 s)
+[21/94] recyclopedia rp31-haw r1: answer recycle_bin (8.6 s)
+[22/94] recyclopedia rp32-sea r1: answer drop_off_special (10.6 s)
+[23/94] recyclopedia rp33-aus r1: answer drop_off_special (8.6 s)
+[24/94] recyclopedia rp34-haw r1: abstain (8.1 s)
+[25/94] recyclopedia rp35-sea r1: answer drop_off_special (8.1 s)
+[26/94] recyclopedia rp36-aus r1: answer drop_off_special (8.1 s)
+[27/94] recyclopedia rp37-haw r1: answer drop_off_special (7.6 s)
+[28/94] recyclopedia rp38-sea r1: answer drop_off_special (9.1 s)
+[29/94] recyclopedia rp39-aus r1: abstain (9.1 s)
+[30/94] recyclopedia rp40-haw r1: answer drop_off_special (7.7 s)
+[31/94] recyclopedia rp41-aus r1: conditional (11.1 s)
+[32/94] recyclopedia rp42-sea r1: answer recycle_bin (11.1 s)
+[33/94] recyclopedia rp43-aus r1: answer drop_off_special (8.1 s)
+[34/94] recyclopedia rp44-haw r1: answer garbage (9.1 s)
+[35/94] recyclopedia rp45-sea r1: answer recycle_bin (8.6 s)
+[36/94] recyclopedia rp46-aus r1: conditional (9.6 s)
+[37/94] recyclopedia rp47-haw r1: answer recycle_bin (9.1 s)
+[38/94] recyclopedia rp48-sea r1: answer drop_off_special (8.1 s)
+[39/94] recyclopedia rp49-aus r1: answer drop_off_special (8.1 s)
+[40/94] recyclopedia rp50-haw r1: answer drop_off_special (8.6 s)
+[41/94] locator lc07-sea r1: answer drop_off_special (8.9 s)
+[42/94] locator lc08-aus r1: answer drop_off_special (9.4 s)
+[43/94] locator lc09-haw r1: answer drop_off_special (10.0 s)
+[44/94] locator lc10-sea r1: answer drop_off_special (15.3 s)
+[45/94] locator lc11-aus r1: answer drop_off_special (14.3 s)
+[46/94] locator lc12-haw r1: answer drop_off_special (14.8 s)
+[47/94] locator lc13-sea r1: answer drop_off_special (9.9 s)
+[48/94] locator lc14-aus r1: answer drop_off_special (9.4 s)
+[49/94] locator lc15-haw r1: answer drop_off_special (10.0 s)
+[50/94] locator lc16-sea r1: answer garbage (8.1 s)
+[51/94] locator lc17-aus r1: answer drop_off_special (8.9 s)
+[52/94] locator lc18-haw r1: answer garbage (8.6 s)
+[53/94] locator lc19-sea r1: answer recycle_bin (9.6 s)
+[54/94] locator lc20-aus r1: answer recycle_bin (9.6 s)
+[55/94] locator lc21-haw r1: answer drop_off_special (10.9 s)
+[56/94] locator lc22-sea r1: answer drop_off_special (9.2 s)
+[57/94] locator lc23-aus r1: abstain (9.0 s)
+[58/94] locator lc24-haw r1: answer drop_off_special (9.4 s)
+[59/94] locator lc25-aus r1: answer drop_off_special (8.9 s)
+[60/94] locator lc26-haw r1: conditional (10.4 s)
+[61/94] locator lc27-sea r1: answer drop_off_special (9.4 s)
+[62/94] locator lc28-haw r1: conditional (13.5 s)
+[63/94] locator lc29-aus r1: answer drop_off_special (9.5 s)
+[64/94] locator lc30-sea r1: answer drop_off_special (10.5 s)
+[65/94] scan ph01 r1: identify=identified answer deposit_return (14.9 s)
+[66/94] scan ph02 r1: identify=identified answer recycle_bin (11.3 s)
+[67/94] scan ph03 r1: identify=identified answer recycle_bin (13.2 s)
+[68/94] scan ph04 r1: identify=identified answer drop_off_special (15.6 s)
+[69/94] scan ph05 r1: identify=identified answer garbage (11.3 s)
+[70/94] scan ph06 r1: identify=identified answer drop_off_special (12.4 s)
+[71/94] scan ph07 r1: identify=identified answer garbage (12.6 s)
+[72/94] scan ph08 r1: identify=identified answer recycle_bin (14.9 s)
+[73/94] scan ph09 r1: identify=identified answer recycle_bin (11.5 s)
+[74/94] scan ph10 r1: identify=identified answer deposit_return (13.3 s)
+[75/94] scan ph11 r1: identify=identified answer recycle_bin (12.4 s)
+[76/94] scan ph12 r1: identify=identified answer recycle_bin (13.4 s)
+[77/94] scan ph13 r1: identify=identified answer recycle_bin (15.0 s)
+[78/94] scan ph14 r1: identify=identified answer compost_bin (12.4 s)
+[79/94] scan ph15 r1: identify=identified answer garbage (11.6 s)
+[80/94] scan ph16 r1: identify=identified answer drop_off_special (15.8 s)
+[81/94] scan ph17 r1: identify=identified abstain (11.8 s)
+[82/94] scan ph18 r1: identify=identified answer drop_off_special (14.1 s)
+[83/94] scan ph19 r1: identify=multiple no answer (15.9 s)
+[84/94] scan ph20 r1: identify=identified answer drop_off_special (11.5 s)
+[85/94] scan ph21 r1: identify=identified clarify (14.7 s)
+[86/94] scan ph22 r1: identify=multiple no answer (11.4 s)
+[87/94] scan ph23 r1: identify=identified answer garbage (15.0 s)
+[88/94] scan ph24 r1: identify=multiple no answer (11.8 s)
+[89/94] scan ph31 r1: identify=identified conditional (13.2 s)
+[90/94] scan ph32 r1: identify=identified answer drop_off_special (11.3 s)
+[91/94] scan ph33 r1: identify=identified answer drop_off_special (11.9 s)
+[92/94] scan ph34 r1: identify=identified conditional (15.4 s)
+[93/94] scan ph35 r1: identify=identified answer recycle_bin (11.7 s)
+[94/94] scan ph36 r1: identify=multiple no answer (12.2 s)
+Done: 94 case runs written to /Users/kileysullivan/refcycle-builds/refcycle-scored/review/results/whole-app-20261116-205922/whole-app
+
+== Stopping the servers
+
+== Checking that every raw engine answer and explanation was saved
+  every answer and explanation is present, in raw/ and in the engine log
+
+== Grading
+
+== Blind invented-rules sheet: baseline, team and whole-app, shuffled together
+Exported 274 explanations to /Users/kileysullivan/refcycle-builds/refcycle-scored/review/results/whole-app-20261116-205922/blind
+  builds on the sheet: 3. Grade blind-sheet.csv, then: ./scripts/run-scored-whole-app.sh blind-report /Users/kileysullivan/refcycle-builds/refcycle-scored/review/results/whole-app-20261116-205922/blind
+
+== Finished. Results: /Users/kileysullivan/refcycle-builds/refcycle-scored/review/results/whole-app-20261116-205922
+  summary: /Users/kileysullivan/refcycle-builds/refcycle-scored/review/results/whole-app-20261116-205922/whole-app/grading/summary.md
+  Remember to start the Prize Stats API again.

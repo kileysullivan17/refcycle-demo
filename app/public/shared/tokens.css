@@ -1,0 +1,39 @@
+/* RefCycle design tokens: contracts v1.3, section 11 (final, approved 2026-11-05).
+   Names and values are fixed. Every color, font, radius, spacing and type size in the app is used only
+   through these custom properties; no other stylesheet hardcodes a value. */
+:root {
+  --color-blue: #4468A1; /* San Marino */
+  --color-ink: #17212C; /* Mirage Blue */
+  --color-gold: #FFD809;
+  --color-red: #FF2D35; /* Pelati Red */
+  --color-sand: #F0E2C3; /* Wheatfield */
+  --color-white: #FFFFFF;
+
+  --font-text: 'Outfit', sans-serif;
+  --font-display: 'MuseoModerno', sans-serif;
+
+  --radius-control: 15px;
+  --space-unit: 8px;
+  --icon-max: 20px;
+
+  --type-h1-size: 28px;
+  --type-h1-weight: 300;
+  --type-h2-size: 22px;
+  --type-h2-weight: 400;
+  --type-h3-size: 20px;
+  --type-h3-weight: 400;
+  --type-headline-size: 17px;
+  --type-headline-weight: 600;
+  --type-body-size: 17px;
+  --type-body-weight: 400;
+  --type-callout-size: 16px;
+  --type-callout-weight: 400;
+  --type-subhead-size: 15px;
+  --type-subhead-weight: 400;
+  --type-footnote-size: 13px;
+  --type-footnote-weight: 400;
+  --type-caption-size: 11px;
+  --type-caption-weight: 400;
+  --type-card-red-size: var(--type-h2-size);
+  --type-card-red-weight: 700;
+}

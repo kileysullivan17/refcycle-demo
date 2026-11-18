@@ -1,0 +1,7 @@
+POST-UPGRADE CHECK, NOT A SCORE.
+Cases: all test and held_out cases
+Build: main 906194b
+zod: 4.6.6 (engine), 4.6.6 (app)
+Started: 2026-11-17T23:55:00Z
+Every test and held_out case was run after the zod upgrade (4.1.11 to 4.6.6, engine and app). The scored runs used 4.1.11. The grading here is for comparison only,
+and nothing here changes or adds to the scored run or its results.

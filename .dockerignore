@@ -1,0 +1,19 @@
+# What never goes into the image. The key is set as a host secret, never in a file.
+**/.env
+**/.env.*
+!**/.env.example
+**/node_modules
+**/logs
+**/.DS_Store
+.git
+# Not needed to run the app.
+writeup
+specs
+orchestrator
+app/test
+engine/code/test
+engine/code/eval
+scripts/run-scored-whole-app.sh
+scripts/blind-tools.mjs
+scripts/raw-check.mjs
+scripts/fix-check-readout.mjs

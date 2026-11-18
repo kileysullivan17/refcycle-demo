@@ -1,0 +1,36 @@
+/* Place guidelines: rule cards. Values only through tokens.css. */
+
+.rule-list {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--space-unit) * 1.5);
+}
+
+.rule-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-unit);
+  padding: calc(var(--space-unit) * 2);
+  border: 1px solid var(--color-ink);
+  border-radius: var(--radius-control);
+  background: var(--color-white);
+  overflow-wrap: anywhere;
+}
+
+.rule-title {
+  font-size: var(--type-headline-size);
+  font-weight: var(--type-headline-weight);
+}
+
+.rule-stream,
+.rule-label {
+  font-weight: 600;
+}
+
+.rule-quote {
+  margin: 0;
+  padding: 0 0 0 calc(var(--space-unit) * 1.5);
+  border-left: 3px solid var(--color-blue);
+  font-size: var(--type-callout-size);
+  font-weight: var(--type-callout-weight);
+}

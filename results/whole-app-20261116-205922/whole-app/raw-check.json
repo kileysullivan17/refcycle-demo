@@ -1,0 +1,25 @@
+{
+  "results": "/Users/kileysullivan/refcycle-builds/refcycle-scored/review/results/whole-app-20261116-205922/whole-app",
+  "cases": 94,
+  "drive_failures": [],
+  "cases_with_no_question": [
+    "scan/ph19.r1 (scan: multiple)",
+    "scan/ph22.r1 (scan: multiple)",
+    "scan/ph24.r1 (scan: multiple)",
+    "scan/ph36.r1 (scan: multiple)"
+  ],
+  "questions_asked": 90,
+  "answers_saved_in_full": 90,
+  "answers_missing_or_cut": [],
+  "screens_saved": 90,
+  "screenshots_saved": 94,
+  "engine_log": {
+    "file": "server-logs/engine-requests.jsonl",
+    "lines": 90,
+    "answers_with_explanation": 90,
+    "with_model_diagnostics": 90,
+    "raw_answers_found_word_for_word_in_engine_log": 90
+  },
+  "ok": true,
+  "problems": []
+}

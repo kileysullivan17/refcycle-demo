@@ -1,0 +1,40 @@
+{
+  "links": [
+    {
+      "id": "sea-donate-share-resell",
+      "place": "seattle_wa",
+      "title": "Donate, Share, Resell, & Buy Used",
+      "url": "https://www.seattle.gov/utilities/protecting-our-environment/sustainability-tips/waste-prevention/at-home/donate-share-resell-and-buy-used",
+      "publisher": "Seattle Public Utilities",
+      "description": "The City's page on donating, sharing, swapping, buying second-hand and repairing in Seattle.",
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "atx-reuse-directory",
+      "place": "austin_tx",
+      "title": "Austin Reuse Directory",
+      "url": "https://austinreusedirectory.com/",
+      "publisher": "Linked from the City of Austin's Austin Resource Recovery pages",
+      "description": "A searchable directory of places in Austin that take donations, resell, rent or repair everyday items.",
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "hc-reuse-centers",
+      "place": "hawaii_county_hi",
+      "title": "Reuse Centers at County Recycling and Transfer Stations",
+      "url": "https://www.hawaiizerowaste.org/reuse-2/",
+      "publisher": "Hawaiʻi County Department of Environmental Management",
+      "description": "The County's reuse page, which lists the reuse centers at County recycling and transfer stations.",
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "community-repair-hub",
+      "place": null,
+      "title": "Community Repair Hub",
+      "url": "https://www.ifixit.com/Community/Events",
+      "publisher": "iFixit, with U.S. PIRG",
+      "description": "A listing of free community repair events, such as repair cafes and fix-it clinics, across the United States.",
+      "checked": "2026-11-11"
+    }
+  ]
+}

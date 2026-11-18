@@ -1,0 +1,6 @@
+POST-RUN CHECK, NOT A SCORE.
+Cases: ph19,ph36,ph22,ph24,lc28-haw
+Build: main adf3d43
+Started: 2026-11-17T22:45:52Z
+These cases were run again after a fix, to see what the app now does. Nothing here is graded,
+and nothing here changes or adds to the scored run or its results.

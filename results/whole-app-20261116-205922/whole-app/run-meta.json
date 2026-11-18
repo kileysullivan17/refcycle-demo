@@ -1,0 +1,25 @@
+{
+  "build": "whole-app",
+  "base_url": "http://127.0.0.1:3001",
+  "build_dir": "/Users/kileysullivan/refcycle-builds/refcycle-whole-app",
+  "build_head": "e08e617",
+  "keys_dir": "/Users/kileysullivan/refcycle-builds/refcycle-private/frozen-2026-11-05",
+  "splits": [
+    "test",
+    "held_out"
+  ],
+  "features": [
+    "recyclopedia",
+    "locator",
+    "scan"
+  ],
+  "repeats": 1,
+  "started": "2026-11-17T06:59:29.554Z",
+  "node": "v26.8.1",
+  "browser": "157.0.8103.79",
+  "host": "Kileys-Mac-mini.local",
+  "platform": "darwin 25.6.0",
+  "fake_photo_control": null,
+  "cases": 94,
+  "finished": "2026-11-17T07:16:28.299Z"
+}

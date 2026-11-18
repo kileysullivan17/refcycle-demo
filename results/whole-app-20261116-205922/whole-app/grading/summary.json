@@ -1,0 +1,294 @@
+{
+  "build": "whole-app",
+  "run": {
+    "build": "whole-app",
+    "base_url": "http://127.0.0.1:3001",
+    "build_dir": "/Users/kileysullivan/refcycle-builds/refcycle-whole-app",
+    "build_head": "e08e617",
+    "keys_dir": "/Users/kileysullivan/refcycle-builds/refcycle-private/frozen-2026-11-05",
+    "splits": [
+      "test",
+      "held_out"
+    ],
+    "features": [
+      "recyclopedia",
+      "locator",
+      "scan"
+    ],
+    "repeats": 1,
+    "started": "2026-11-17T06:59:29.554Z",
+    "node": "v26.8.1",
+    "browser": "157.0.8103.79",
+    "host": "Kileys-Mac-mini.local",
+    "platform": "darwin 25.6.0",
+    "fake_photo_control": null,
+    "cases": 94,
+    "finished": "2026-11-17T07:16:28.299Z"
+  },
+  "keys_check_ok": true,
+  "models_seen": [
+    "anthropic/claude-sonnet-5-5"
+  ],
+  "by_split": {
+    "test": {
+      "recyclopedia": {
+        "cases": 30,
+        "drive_failures": 0,
+        "confident_wrong": [
+          2,
+          30
+        ],
+        "accuracy_answerable": [
+          26,
+          26
+        ],
+        "accuracy_all": [
+          28,
+          30
+        ],
+        "abstention_recall": [
+          2,
+          2
+        ],
+        "over_abstention": [
+          0,
+          26
+        ],
+        "conditional_handling": [
+          0,
+          2
+        ],
+        "citation_validity": [
+          28,
+          28
+        ],
+        "display_mismatch": [
+          0,
+          30
+        ],
+        "explanation_not_shown": [
+          0,
+          30
+        ],
+        "answers": 28
+      },
+      "locator": {
+        "cases": 18,
+        "drive_failures": 0,
+        "accuracy": [
+          18,
+          18
+        ],
+        "strict_exact_facilities": [
+          10,
+          12
+        ],
+        "facilities_shown_without_source": 0,
+        "facilities_shown": 32,
+        "wrong_named_sites_shown": [
+          0,
+          18
+        ],
+        "confident_wrong_item_answer": [
+          0,
+          18
+        ]
+      },
+      "scan": {
+        "cases": 24,
+        "drive_failures": 0,
+        "identification_correct": [
+          23,
+          24
+        ],
+        "identification_needs_review": 0,
+        "wrong_item_no_followup": [
+          0,
+          24
+        ],
+        "routed_answer": {
+          "cases": 24,
+          "drive_failures": 0,
+          "confident_wrong": [
+            1,
+            24
+          ],
+          "accuracy_answerable": [
+            18,
+            21
+          ],
+          "accuracy_all": [
+            20,
+            24
+          ],
+          "abstention_recall": [
+            1,
+            1
+          ],
+          "over_abstention": [
+            0,
+            22
+          ],
+          "conditional_handling": [
+            1,
+            2
+          ],
+          "citation_validity": [
+            19,
+            19
+          ],
+          "display_mismatch": [
+            0,
+            21
+          ],
+          "explanation_not_shown": [
+            0,
+            21
+          ],
+          "answers": 19
+        },
+        "routed_without_followup": 21,
+        "overall_correct": [
+          20,
+          24
+        ]
+      },
+      "recyclopedia_and_scan": {
+        "confident_wrong": [
+          3,
+          54
+        ]
+      }
+    },
+    "held_out": {
+      "recyclopedia": {
+        "cases": 10,
+        "drive_failures": 0,
+        "confident_wrong": [
+          0,
+          10
+        ],
+        "accuracy_answerable": [
+          8,
+          10
+        ],
+        "accuracy_all": [
+          8,
+          10
+        ],
+        "abstention_recall": [
+          0,
+          0
+        ],
+        "over_abstention": [
+          0,
+          10
+        ],
+        "conditional_handling": [
+          0,
+          0
+        ],
+        "citation_validity": [
+          10,
+          10
+        ],
+        "display_mismatch": [
+          0,
+          10
+        ],
+        "explanation_not_shown": [
+          0,
+          10
+        ],
+        "answers": 8
+      },
+      "locator": {
+        "cases": 6,
+        "drive_failures": 0,
+        "accuracy": [
+          5,
+          6
+        ],
+        "strict_exact_facilities": [
+          4,
+          6
+        ],
+        "facilities_shown_without_source": 0,
+        "facilities_shown": 13,
+        "wrong_named_sites_shown": [
+          1,
+          6
+        ],
+        "confident_wrong_item_answer": [
+          0,
+          6
+        ]
+      },
+      "scan": {
+        "cases": 6,
+        "drive_failures": 0,
+        "identification_correct": [
+          5,
+          6
+        ],
+        "identification_needs_review": 0,
+        "wrong_item_no_followup": [
+          0,
+          6
+        ],
+        "routed_answer": {
+          "cases": 6,
+          "drive_failures": 0,
+          "confident_wrong": [
+            0,
+            6
+          ],
+          "accuracy_answerable": [
+            3,
+            4
+          ],
+          "accuracy_all": [
+            5,
+            6
+          ],
+          "abstention_recall": [
+            0,
+            0
+          ],
+          "over_abstention": [
+            0,
+            6
+          ],
+          "conditional_handling": [
+            2,
+            2
+          ],
+          "citation_validity": [
+            5,
+            5
+          ],
+          "display_mismatch": [
+            0,
+            5
+          ],
+          "explanation_not_shown": [
+            0,
+            5
+          ],
+          "answers": 3
+        },
+        "routed_without_followup": 5,
+        "overall_correct": [
+          5,
+          6
+        ]
+      },
+      "recyclopedia_and_scan": {
+        "confident_wrong": [
+          0,
+          16
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="referrer" content="no-referrer" />
+    <title>RefCycle</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="/shared/fonts.css" />
+    <link rel="stylesheet" href="/shared/tokens.css" />
+    <link rel="stylesheet" href="/shared/app.css" />
+    <link rel="stylesheet" href="/features/recyclopedia/recyclopedia.css" />
+    <link rel="stylesheet" href="/features/camera-scan/camera-scan.css" />
+    <link rel="stylesheet" href="/shared/vendor/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="/features/locator/locator.css" />
+    <link rel="stylesheet" href="/features/guidelines/guidelines.css" />
+    <link rel="stylesheet" href="/features/reuse/reuse.css" />
+  </head>
+  <body>
+    <div class="app" id="app">
+      <header class="app-header" id="app-header">
+        <button type="button" class="back-button" id="back-button" aria-label="Back"></button>
+        <div class="app-title" id="app-title">RefCycle</div>
+        <select class="place-select" id="place-select" aria-label="Place"></select>
+      </header>
+      <main class="screen" id="screen" tabindex="-1">
+        <noscript>RefCycle needs JavaScript to run.</noscript>
+      </main>
+      <nav class="tab-bar" id="tab-bar" aria-label="Main" hidden>
+        <a class="tab" href="/recyclopedia" data-tab="recyclopedia"><span>Recyclopedia</span></a>
+        <a class="tab tab-camera" href="/scan" data-tab="scan"><span>Camera</span></a>
+        <a class="tab" href="/locations" data-tab="locations"><span>Locations</span></a>
+      </nav>
+    </div>
+    <script type="module" src="/shared/app.js"></script>
+  </body>
+</html>

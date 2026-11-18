@@ -1,0 +1,38 @@
+# Fly.io settings for the RefCycle whole app. Nothing here is a secret: the provider key is set with
+# `fly secrets set ANTHROPIC_API_KEY=...` and is never written in this file or anywhere in the repo.
+app = "refcycle-demo"
+primary_region = "sjc"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  NODE_ENV = "production"
+  PORT = "8080"
+  # Fly's proxy writes the visitor's address in Fly-Client-IP; the app reads it only with this on.
+  TRUST_FLY_CLIENT_IP = "1"
+
+# The spending ledger, so a restart or a new deploy does not reset the daily cap.
+[mounts]
+  source = "refcycle_logs"
+  destination = "/srv/refcycle/app/logs"
+  initial_size = "1gb"
+
+# One machine, always on: the per-visitor counts live in memory and a sleeping machine would reset them.
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "off"
+  auto_start_machines = true
+  min_machines_running = 1
+
+  [[http_service.checks]]
+    method = "GET"
+    path = "/api/jurisdictions"
+    interval = "30s"
+    timeout = "5s"
+    grace_period = "30s"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"

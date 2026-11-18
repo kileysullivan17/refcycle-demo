@@ -1,0 +1,39 @@
+/* Give it another life: outside link cards. Values only through tokens.css. */
+
+.reuse-list {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--space-unit) * 1.5);
+}
+
+.reuse-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-unit);
+  padding: calc(var(--space-unit) * 2);
+  border: 1px solid var(--color-ink);
+  border-radius: var(--radius-control);
+  background: var(--color-white);
+}
+
+/* A sand tag: its text is ink (contrast rule). */
+.reuse-tag {
+  padding: calc(var(--space-unit) / 2) var(--space-unit);
+  border-radius: var(--radius-control);
+  background: var(--color-sand);
+  color: var(--color-ink);
+  font-size: var(--type-footnote-size);
+  font-weight: 600;
+}
+
+.reuse-title {
+  font-size: var(--type-headline-size);
+  font-weight: var(--type-headline-weight);
+}
+
+.reuse-title a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-unit);
+}

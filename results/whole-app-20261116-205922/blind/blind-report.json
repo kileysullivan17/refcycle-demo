@@ -1,0 +1,391 @@
+{
+  "graded_sheet": "/Users/kileysullivan/refcycle-builds/refcycle-scored/review/results/whole-app-20261116-205922/blind/blind-sheet-graded.csv",
+  "published_sheet": "/Users/kileysullivan/refcycle-builds/handoff-2026-11-05/blind-grading/blind-sheet-graded.csv",
+  "published_results_changed": false,
+  "all_rows_graded": true,
+  "totals": {
+    "rows": 274,
+    "graded": 274,
+    "faithful": 239,
+    "loose": 35,
+    "invented": 0,
+    "not_graded": 0,
+    "unreadable_grade": 0
+  },
+  "new_builds": {
+    "whole-app": {
+      "rows": 90,
+      "graded": 90,
+      "faithful": 79,
+      "loose": 11,
+      "invented": 0,
+      "not_graded": 0,
+      "unreadable_grade": 0,
+      "loose_and_invented_rows": [
+        {
+          "row_id": "E015",
+          "feature": "scan",
+          "case_id": "ph23",
+          "grade": "loose",
+          "grader_note": "Pack does not name coffee pods; applying \"plastic items smaller than 3 inches\" assumes a size (and all-plastic item) the question does not give."
+        },
+        {
+          "row_id": "E056",
+          "feature": "recyclopedia",
+          "case_id": "rp33-aus",
+          "grade": "loose",
+          "grader_note": "Rule covers \"electronics\"; the pack does not name microwaves, so treating one as electronics is an inference the rule does not state."
+        },
+        {
+          "row_id": "E077",
+          "feature": "scan",
+          "case_id": "ph08",
+          "grade": "loose",
+          "grader_note": "Rule names food containers, dairy tubs and cups; the answer assumes an unspecified plastic tub is one of these."
+        },
+        {
+          "row_id": "E078",
+          "feature": "locator",
+          "case_id": "lc19-sea",
+          "grade": "loose",
+          "grader_note": "Rule names plastic bottles and milk jugs; other jugs are not named, so the answer treats this jug as a bottle or milk jug."
+        },
+        {
+          "row_id": "E088",
+          "feature": "recyclopedia",
+          "case_id": "rp32-sea",
+          "grade": "loose",
+          "grader_note": "Rule lists \"Electronics\" only; the pack does not name microwaves, so treating one as electronics is an inference the rule does not state."
+        },
+        {
+          "row_id": "E133",
+          "feature": "recyclopedia",
+          "case_id": "rp16-haw",
+          "grade": "loose",
+          "grader_note": "Rule is limited to #2 HDPE bottles and jugs; resin type is not stated for this jug, so the single answer assumes #2 (hc-plastic-006 makes it conditional)."
+        },
+        {
+          "row_id": "E139",
+          "feature": "scan",
+          "case_id": "ph04",
+          "grade": "loose",
+          "grader_note": "Screen labels the item \"HDPE #2 jug\"; resin type is not in the question. Rule is limited to #2 bottles and jugs, so the answer rests on an assumed condition."
+        },
+        {
+          "row_id": "E160",
+          "feature": "recyclopedia",
+          "case_id": "rp42-sea",
+          "grade": "loose",
+          "grader_note": "Rule names plastic bottles and milk jugs; other jugs are not named, so the answer treats this jug as a bottle or milk jug."
+        },
+        {
+          "row_id": "E171",
+          "feature": "scan",
+          "case_id": "ph16",
+          "grade": "loose",
+          "grader_note": "Rule covers \"electronics\"; the pack does not name microwaves, so treating one as electronics is an inference the rule does not state."
+        },
+        {
+          "row_id": "E207",
+          "feature": "scan",
+          "case_id": "ph10",
+          "grade": "loose",
+          "grader_note": "Rule covers \"qualified\" HI-5 beverage containers and its prep says labels visible; an unlabeled can is assumed to qualify."
+        },
+        {
+          "row_id": "E260",
+          "feature": "recyclopedia",
+          "case_id": "rp14-sea",
+          "grade": "loose",
+          "grader_note": "Rule names plastic bottles and milk jugs; other jugs are not named, so the answer treats this jug as a bottle or milk jug."
+        }
+      ]
+    }
+  },
+  "consistency_check": {
+    "baseline": {
+      "rows": 92,
+      "graded": 92,
+      "faithful": 80,
+      "loose": 12,
+      "invented": 0,
+      "not_graded": 0,
+      "unreadable_grade": 0,
+      "published": {
+        "rows": 92,
+        "graded": 92,
+        "faithful": 87,
+        "loose": 5,
+        "invented": 0,
+        "not_graded": 0,
+        "unreadable_grade": 0
+      },
+      "compared": 92,
+      "same_grade": 81,
+      "different_grade": 11,
+      "not_graded_now": 0,
+      "text_identical_to_published": 92,
+      "not_in_published_sheet": [],
+      "not_in_this_sheet": [],
+      "differences": [
+        {
+          "row_id": "E104",
+          "published_row_id": "E068",
+          "feature": "scan",
+          "case_id": "ph34",
+          "published_grade": "loose",
+          "grade_now": "faithful",
+          "published_note": "Preface \"Field report dated 2026-11-03 (phone call, before the final run); not a published page\" adds \"before the final run\", which the cited rule does not say; rule says only \"Not published by the business\".",
+          "note_now": ""
+        },
+        {
+          "row_id": "E105",
+          "published_row_id": "E171",
+          "feature": "locator",
+          "case_id": "lc19-sea",
+          "published_grade": "faithful",
+          "grade_now": "loose",
+          "published_note": "",
+          "note_now": "Rule names plastic bottles and milk jugs; other jugs are not named, so the answer treats this jug as a bottle or milk jug."
+        },
+        {
+          "row_id": "E113",
+          "published_row_id": "E136",
+          "feature": "scan",
+          "case_id": "ph10",
+          "published_grade": "faithful",
+          "grade_now": "loose",
+          "published_note": "",
+          "note_now": "Rule covers \"qualified\" HI-5 beverage containers and its prep says labels visible; an unlabeled can is assumed to qualify."
+        },
+        {
+          "row_id": "E128",
+          "published_row_id": "E038",
+          "feature": "locator",
+          "case_id": "lc21-haw",
+          "published_grade": "loose",
+          "grade_now": "faithful",
+          "published_note": "Preface \"Field report dated 2026-11-03 (phone call, before the final run); not a published page\" adds \"before the final run\", which the cited rule does not say; rule says only \"Not published by the business\".",
+          "note_now": ""
+        },
+        {
+          "row_id": "E148",
+          "published_row_id": "E181",
+          "feature": "scan",
+          "case_id": "ph13",
+          "published_grade": "faithful",
+          "grade_now": "loose",
+          "published_note": "",
+          "note_now": "Screen says the local rules do not cover this item, but the pack has a cardboard-box rule (atx-paper-003); no rule is invented, coverage is misstated."
+        },
+        {
+          "row_id": "E212",
+          "published_row_id": "E067",
+          "feature": "scan",
+          "case_id": "ph23",
+          "published_grade": "faithful",
+          "grade_now": "loose",
+          "published_note": "",
+          "note_now": "Pack does not name coffee pods; applying \"plastic items smaller than 3 inches\" assumes a size (and all-plastic item) the question does not give."
+        },
+        {
+          "row_id": "E225",
+          "published_row_id": "E149",
+          "feature": "recyclopedia",
+          "case_id": "rp33-aus",
+          "published_grade": "faithful",
+          "grade_now": "loose",
+          "published_note": "",
+          "note_now": "Rule covers \"electronics\"; the pack does not name microwaves, so treating one as electronics is an inference the rule does not state."
+        },
+        {
+          "row_id": "E230",
+          "published_row_id": "E021",
+          "feature": "recyclopedia",
+          "case_id": "rp42-sea",
+          "published_grade": "faithful",
+          "grade_now": "loose",
+          "published_note": "",
+          "note_now": "Rule names plastic bottles and milk jugs; other jugs are not named, so the answer treats this jug as a bottle or milk jug."
+        },
+        {
+          "row_id": "E251",
+          "published_row_id": "E173",
+          "feature": "recyclopedia",
+          "case_id": "rp14-sea",
+          "published_grade": "faithful",
+          "grade_now": "loose",
+          "published_note": "",
+          "note_now": "Rule names plastic bottles and milk jugs; other jugs are not named, so the answer treats this jug as a bottle or milk jug."
+        },
+        {
+          "row_id": "E265",
+          "published_row_id": "E154",
+          "feature": "scan",
+          "case_id": "ph08",
+          "published_grade": "faithful",
+          "grade_now": "loose",
+          "published_note": "",
+          "note_now": "Rule names food containers, dairy tubs and cups; the answer assumes an unspecified plastic tub is one of these."
+        },
+        {
+          "row_id": "E270",
+          "published_row_id": "E025",
+          "feature": "scan",
+          "case_id": "ph16",
+          "published_grade": "faithful",
+          "grade_now": "loose",
+          "published_note": "",
+          "note_now": "Rule covers \"electronics\"; the pack does not name microwaves, so treating one as electronics is an inference the rule does not state."
+        }
+      ]
+    },
+    "team": {
+      "rows": 92,
+      "graded": 92,
+      "faithful": 80,
+      "loose": 12,
+      "invented": 0,
+      "not_graded": 0,
+      "unreadable_grade": 0,
+      "published": {
+        "rows": 92,
+        "graded": 92,
+        "faithful": 86,
+        "loose": 6,
+        "invented": 0,
+        "not_graded": 0,
+        "unreadable_grade": 0
+      },
+      "compared": 92,
+      "same_grade": 80,
+      "different_grade": 12,
+      "not_graded_now": 0,
+      "text_identical_to_published": 92,
+      "not_in_published_sheet": [],
+      "not_in_this_sheet": [],
+      "differences": [
+        {
+          "row_id": "E004",
+          "published_row_id": "E177",
+          "feature": "scan",
+          "case_id": "ph10",
+          "published_grade": "faithful",
+          "grade_now": "loose",
+          "published_note": "",
+          "note_now": "Rule covers \"qualified\" HI-5 beverage containers and its prep says labels visible; an unlabeled can is assumed to qualify."
+        },
+        {
+          "row_id": "E038",
+          "published_row_id": "E174",
+          "feature": "scan",
+          "case_id": "ph08",
+          "published_grade": "faithful",
+          "grade_now": "loose",
+          "published_note": "",
+          "note_now": "Rule names food containers, dairy tubs and cups; the answer assumes an unspecified plastic tub is one of these."
+        },
+        {
+          "row_id": "E071",
+          "published_row_id": "E060",
+          "feature": "scan",
+          "case_id": "ph23",
+          "published_grade": "faithful",
+          "grade_now": "loose",
+          "published_note": "",
+          "note_now": "Pack does not name coffee pods; applying \"plastic items smaller than 3 inches\" assumes a size (and all-plastic item) the question does not give."
+        },
+        {
+          "row_id": "E081",
+          "published_row_id": "E140",
+          "feature": "scan",
+          "case_id": "ph21",
+          "published_grade": "loose",
+          "grade_now": "faithful",
+          "published_note": "Clarify question adds \"dry\" (rule prep is clean and empty) and a water-based (latex) paint branch that neither cited rule covers; cited HHW rule names oil-based paint only.",
+          "note_now": ""
+        },
+        {
+          "row_id": "E114",
+          "published_row_id": "E119",
+          "feature": "recyclopedia",
+          "case_id": "rp42-sea",
+          "published_grade": "faithful",
+          "grade_now": "loose",
+          "published_note": "",
+          "note_now": "Rule names plastic bottles and milk jugs; other jugs are not named, so the answer treats this jug as a bottle or milk jug."
+        },
+        {
+          "row_id": "E117",
+          "published_row_id": "E114",
+          "feature": "scan",
+          "case_id": "ph34",
+          "published_grade": "loose",
+          "grade_now": "faithful",
+          "published_note": "Preface \"Field report dated 2026-11-03 (phone call, before the final run); not a published page\" adds \"before the final run\", which the cited rule does not say; rule says only \"Not published by the business\".",
+          "note_now": ""
+        },
+        {
+          "row_id": "E121",
+          "published_row_id": "E084",
+          "feature": "recyclopedia",
+          "case_id": "rp14-sea",
+          "published_grade": "faithful",
+          "grade_now": "loose",
+          "published_note": "",
+          "note_now": "Rule names plastic bottles and milk jugs; other jugs are not named, so the answer treats this jug as a bottle or milk jug."
+        },
+        {
+          "row_id": "E188",
+          "published_row_id": "E183",
+          "feature": "recyclopedia",
+          "case_id": "rp33-aus",
+          "published_grade": "faithful",
+          "grade_now": "loose",
+          "published_note": "",
+          "note_now": "Rule covers \"electronics\"; the pack does not name microwaves, so treating one as electronics is an inference the rule does not state."
+        },
+        {
+          "row_id": "E226",
+          "published_row_id": "E170",
+          "feature": "recyclopedia",
+          "case_id": "rp41-aus",
+          "published_grade": "faithful",
+          "grade_now": "loose",
+          "published_note": "",
+          "note_now": "Material not stated; answers from the plastic-bottle rule alone (with its cap prep) where the pack also has a glass-bottle rule."
+        },
+        {
+          "row_id": "E244",
+          "published_row_id": "E110",
+          "feature": "recyclopedia",
+          "case_id": "rp32-sea",
+          "published_grade": "faithful",
+          "grade_now": "loose",
+          "published_note": "",
+          "note_now": "Rule lists \"Electronics\" only; the pack does not name microwaves, so treating one as electronics is an inference the rule does not state."
+        },
+        {
+          "row_id": "E253",
+          "published_row_id": "E150",
+          "feature": "locator",
+          "case_id": "lc19-sea",
+          "published_grade": "faithful",
+          "grade_now": "loose",
+          "published_note": "",
+          "note_now": "Rule names plastic bottles and milk jugs; other jugs are not named, so the answer treats this jug as a bottle or milk jug."
+        },
+        {
+          "row_id": "E262",
+          "published_row_id": "E116",
+          "feature": "locator",
+          "case_id": "lc21-haw",
+          "published_grade": "loose",
+          "grade_now": "faithful",
+          "published_note": "Preface \"Field report dated 2026-11-03 (phone call, before the final run); not a published page\" adds \"before the final run\", which the cited rule does not say; rule says only \"Not published by the business\".",
+          "note_now": ""
+        }
+      ]
+    }
+  }
+}

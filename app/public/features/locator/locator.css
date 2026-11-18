@@ -1,0 +1,69 @@
+/* Locator: list, map and facility detail. Values only through tokens.css.
+   The bundled Leaflet stylesheet (shared/vendor/leaflet) is third-party and is not edited. */
+
+.view-switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-unit);
+}
+
+.site-list {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--space-unit) * 1.5);
+}
+
+.site-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-unit);
+  padding: calc(var(--space-unit) * 2);
+  border: 1px solid var(--color-ink);
+  border-radius: var(--radius-control);
+  background: var(--color-white);
+}
+
+.site-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-unit);
+}
+
+.site-name {
+  font-size: var(--type-headline-size);
+  font-weight: var(--type-headline-weight);
+  overflow-wrap: anywhere;
+}
+
+/* A sand tag: its text is ink (contrast rule). */
+.site-tag {
+  flex: none;
+  padding: calc(var(--space-unit) / 2) var(--space-unit);
+  border-radius: var(--radius-control);
+  background: var(--color-sand);
+  color: var(--color-ink);
+  font-size: var(--type-footnote-size);
+  font-weight: 600;
+}
+
+.site-only {
+  font-weight: 600;
+}
+
+.rule-group {
+  padding-top: calc(var(--space-unit) * 2);
+  border-top: 1px solid var(--color-sand);
+}
+
+.map {
+  width: 100%;
+  height: 420px;
+  border: 1px solid var(--color-ink);
+  border-radius: var(--radius-control);
+  z-index: 0;
+}
+
+.map a {
+  color: var(--color-blue);
+}
