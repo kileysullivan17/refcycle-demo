@@ -1,4 +1,4 @@
-// Design tokens (contracts 11, final): exact names and values, defined once in tokens.css, and used by
+// Design tokens (names from contracts 11, values from decision 18): exact names and values, defined once in tokens.css, and used by
 // every screen (new ones included) only through the custom properties.
 import assert from 'node:assert/strict';
 import { existsSync } from 'node:fs';
@@ -8,21 +8,21 @@ import { PUBLIC_DIR } from '../../src/shared/paths.ts';
 import { allOwnRules, ownStylesheets, parseCss, publicFiles, readPublic, tokens } from '../helpers/css.ts';
 
 const EXPECTED: Record<string, string> = {
-  '--color-blue': '#4468A1',
-  '--color-ink': '#17212C',
-  '--color-gold': '#FFD809',
-  '--color-red': '#FF2D35',
-  '--color-sand': '#F0E2C3',
+  '--color-blue': '#1D5C96',
+  '--color-ink': '#1B2733',
+  '--color-gold': '#D5DADF',
+  '--color-red': '#F28C28',
+  '--color-sand': '#E6EFF6',
   '--color-white': '#FFFFFF',
-  '--radius-control': '15px',
+  '--radius-control': '8px',
   '--space-unit': '8px',
   '--icon-max': '20px',
-  '--type-h1-size': '28px',
-  '--type-h1-weight': '300',
-  '--type-h2-size': '22px',
-  '--type-h2-weight': '400',
+  '--type-h1-size': '30px',
+  '--type-h1-weight': '600',
+  '--type-h2-size': '23px',
+  '--type-h2-weight': '600',
   '--type-h3-size': '20px',
-  '--type-h3-weight': '400',
+  '--type-h3-weight': '600',
   '--type-headline-size': '17px',
   '--type-headline-weight': '600',
   '--type-body-size': '17px',
@@ -33,17 +33,17 @@ const EXPECTED: Record<string, string> = {
   '--type-subhead-weight': '400',
   '--type-footnote-size': '13px',
   '--type-footnote-weight': '400',
-  '--type-caption-size': '11px',
+  '--type-caption-size': '12px',
   '--type-caption-weight': '400',
-  '--type-card-red-size': 'var(--type-h2-size)',
+  '--type-card-red-size': '24px',
   '--type-card-red-weight': '700',
 };
 
-test('tokens.css defines exactly the contract’s tokens with the contract’s values', () => {
+test('tokens.css defines exactly the contract’s tokens with the decision 18 values', () => {
   const defined = tokens();
   for (const [name, value] of Object.entries(EXPECTED)) assert.equal(defined.get(name), value, name);
-  assert.match(defined.get('--font-text') ?? '', /^'Outfit'/);
-  assert.match(defined.get('--font-display') ?? '', /^'MuseoModerno'/);
+  assert.match(defined.get('--font-text') ?? '', /^'Atkinson Hyperlegible Next'/);
+  assert.match(defined.get('--font-display') ?? '', /^'Saira Semi Condensed'/);
   assert.deepEqual([...defined.keys()].sort(), [...Object.keys(EXPECTED), '--font-text', '--font-display'].sort(), 'no extra tokens');
 });
 
@@ -148,14 +148,17 @@ test('no inline styles: screens style through the stylesheets only', () => {
   }
 });
 
-test('fonts are bundled: Outfit 300, 400, 600 and MuseoModerno 400 and a real 700', () => {
+test('fonts are bundled: Atkinson Hyperlegible Next 400, 600 and Saira Semi Condensed 400, 600 and a real 700', () => {
   const css = readPublic('shared/fonts.css');
-  for (const file of ['outfit-latin-300-normal', 'outfit-latin-400-normal', 'outfit-latin-600-normal', 'museomoderno-latin-400-normal', 'museomoderno-latin-700-normal']) {
+  for (const file of [
+    ...['400', '600'].flatMap((w) => [`atkinson-hyperlegible-next-latin-${w}-normal`, `atkinson-hyperlegible-next-latin-ext-${w}-normal`]),
+    ...['400', '600', '700'].flatMap((w) => [`saira-semi-condensed-latin-${w}-normal`, `saira-semi-condensed-latin-ext-${w}-normal`]),
+  ]) {
     assert.ok(css.includes(`./fonts/${file}.woff2`), file);
     assert.ok(existsSync(path.join(PUBLIC_DIR, 'shared', 'fonts', `${file}.woff2`)), file);
   }
   assert.doesNotMatch(css, /https?:\/\//, 'fonts are served by the app, not a font service');
-  for (const license of ['OFL-Outfit.txt', 'OFL-MuseoModerno.txt']) assert.ok(existsSync(path.join(PUBLIC_DIR, 'shared', 'fonts', license)));
+  for (const license of ['OFL-AtkinsonHyperlegibleNext.txt', 'OFL-SairaSemiCondensed.txt']) assert.ok(existsSync(path.join(PUBLIC_DIR, 'shared', 'fonts', license)));
 });
 
 test('the phone-width layout: 430px maximum, usable from 320px', () => {

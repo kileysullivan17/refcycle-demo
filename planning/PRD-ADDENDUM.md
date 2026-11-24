@@ -2,7 +2,7 @@
 
 > RefCycle began as a student concept by a five-person team in the Berkeley UX/UI Boot Camp, UC Berkeley Extension, January 2024. This rebuild and evaluation are solo work.
 
-Approved by Kiley Sullivan, 2026-11-11, from the scope grill. Adds to the approved PRD and contracts v1.3; changes neither. Where this addendum and the PRD or contracts disagree, the PRD and contracts win and the conflict comes back to Kiley.
+Approved by Kiley Sullivan, 2026-11-11, from the scope grill. Adds to the approved PRD and contracts v1.3; changes neither, except the Look (decision 18, below). Where this addendum and the PRD or contracts disagree, the PRD and contracts win and the conflict comes back to Kiley.
 
 ## Unchanged
 
@@ -10,7 +10,10 @@ Approved by Kiley Sullivan, 2026-11-11, from the scope grill. Adds to the approv
 - Public rules packs only; private businesses are shown by public description, never by name.
 - Places: Seattle, Austin, Hawaiʻi County.
 - Recyclopedia, Camera scan and the Recycling center locator exactly as specified in the PRD and contracts v1.3.
-- Design tokens: contracts v1.3, section 11, for every screen, new ones included.
+
+## Changed after the scored run
+
+- **Look** (decision 18, 2026-11-23): the 2024 design tokens in contracts v1.3, section 11, are replaced by a new token set approved by Kiley Sullivan, applied through `tokens.css` only, for every screen. This is the one place this addendum overrides the contracts. The scored results stand: they were scored on the 2024 tokens, and scoring measures answers, not appearance. New tokens must pass WCAG AA, numerically checked.
 
 ## Purpose
 

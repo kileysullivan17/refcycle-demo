@@ -227,17 +227,17 @@ describe('Recyclopedia and the item page', () => {
     await s.context.close();
   });
 
-  test('the red card label is ink, bold and at least 19px in the real MuseoModerno 700 face', { skip: skip() }, async () => {
+  test('the red card label is ink, bold and at least 19px in the real Saira Semi Condensed 700 face', { skip: skip() }, async () => {
     const s = await open(app, { place: 'hawaii_county_hi' });
     await item(s.page, app, 'clear #1 bottle', 'card-red');
     const style = await state(s.page, 'card-red').locator('span').evaluate((el) => {
       const cs = getComputedStyle(el);
       return { color: cs.color, weight: cs.fontWeight, size: parseFloat(cs.fontSize), family: cs.fontFamily, background: getComputedStyle(el.parentElement!).backgroundColor };
     });
-    assert.deepEqual([style.color, style.weight, style.background], ['rgb(23, 33, 44)', '700', 'rgb(255, 45, 53)']);
+    assert.deepEqual([style.color, style.weight, style.background], ['rgb(27, 39, 51)', '700', 'rgb(242, 140, 40)']);
     assert.ok(style.size >= 19);
-    assert.match(style.family, /MuseoModerno/);
-    assert.equal(await s.page.evaluate(() => document.fonts.check('700 22px MuseoModerno')), true);
+    assert.match(style.family, /Saira Semi Condensed/);
+    assert.equal(await s.page.evaluate(() => document.fonts.check('700 24px "Saira Semi Condensed"')), true);
     await s.context.close();
   });
 
@@ -1008,9 +1008,9 @@ describe('look and layout', () => {
     await s.context.close();
   });
 
-  test('every screen, new ones included, renders in the contract’s tokens', { skip: skip() }, async () => {
+  test('every screen, new ones included, renders in the decision 18 tokens', { skip: skip() }, async () => {
     const s = await open(app, { place: 'hawaii_county_hi' });
-    const allowed = new Set(['rgb(68, 104, 161)', 'rgb(23, 33, 44)', 'rgb(255, 216, 9)', 'rgb(255, 45, 53)', 'rgb(240, 226, 195)', 'rgb(255, 255, 255)', 'rgba(0, 0, 0, 0)']);
+    const allowed = new Set(['rgb(29, 92, 150)', 'rgb(27, 39, 51)', 'rgb(213, 218, 223)', 'rgb(242, 140, 40)', 'rgb(230, 239, 246)', 'rgb(255, 255, 255)', 'rgba(0, 0, 0, 0)']);
     for (const route of screens.slice(1)) {
       await s.page.goto(app.url + route);
       await s.page.waitForFunction(() => !document.querySelector('main .spinner') && !document.querySelector('main[aria-busy]'));
@@ -1029,10 +1029,10 @@ describe('look and layout', () => {
         return { colors: [...colors], fonts: [...fonts], sizes: [...sizes] };
       });
       for (const color of report.colors) assert.ok(allowed.has(color), `${route}: ${color}`);
-      for (const font of report.fonts) assert.ok(['Outfit', 'MuseoModerno'].includes(font), `${route}: ${font}`);
-      for (const size of report.sizes) assert.ok(['28px', '22px', '20px', '17px', '16px', '15px', '13px', '11px'].includes(size), `${route}: ${size}`);
+      for (const font of report.fonts) assert.ok(['Atkinson Hyperlegible Next', 'Saira Semi Condensed'].includes(font), `${route}: ${font}`);
+      for (const size of report.sizes) assert.ok(['30px', '24px', '23px', '20px', '17px', '16px', '15px', '13px', '12px'].includes(size), `${route}: ${size}`);
     }
-    assert.equal(await s.page.evaluate(() => document.fonts.check('400 17px Outfit') && document.fonts.check('400 22px MuseoModerno')), true);
+    assert.equal(await s.page.evaluate(() => document.fonts.check('400 17px "Atkinson Hyperlegible Next"') && document.fonts.check('600 23px "Saira Semi Condensed"')), true);
     await s.context.close();
   });
 

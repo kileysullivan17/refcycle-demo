@@ -143,7 +143,7 @@ describe('static files and client routes', () => {
     for (const [file, type] of [
       ['/shared/tokens.css', 'text/css'],
       ['/shared/app.js', 'text/javascript'],
-      ['/shared/fonts/museomoderno-latin-700-normal.woff2', 'font/woff2'],
+      ['/shared/fonts/saira-semi-condensed-latin-700-normal.woff2', 'font/woff2'],
       ['/shared/vendor/leaflet/leaflet.js', 'text/javascript'],
       ['/shared/vendor/leaflet/images/marker-icon.png', 'image/png'],
     ]) {

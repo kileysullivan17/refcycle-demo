@@ -195,6 +195,10 @@ The scored run of 2026-11-16 (`results/whole-app-20261116-205922`, and the v2 re
 
 69. **Address check on the live site, and the custom domain.** After the redeploy of 2026-11-18, one question sent from Kiley's network produced the line "Counted ask: visitor address from the Fly-Client-IP header; public address", so the app counts the visitor's own address and not Fly's proxy. Kiley added a CNAME at Squarespace Domains (`refcycle` to `refcycle-demo.fly.dev`, TTL 1 hour) and asked for the certificate: `fly certs add refcycle.kileysullivan.com -a refcycle-demo` (Let's Encrypt, issued within a minute; Fly charges nothing for it). The site answers at `https://refcycle.kileysullivan.com` and at `https://refcycle-demo.fly.dev`.
 
+## New look (2026-11-23)
+
+70. **New token values: Bin day colors, Match official type (replaces the values in decisions 44 and 45).** Decision 18 in the planning folder's `DECISIONS-LOG.md`, values approved by Kiley Sullivan on 2026-11-23. `tokens.css` keeps every token name and takes the new values; no other stylesheet changed. Fonts are now Atkinson Hyperlegible Next 400, 600 and Saira Semi Condensed 400, 600, 700 from `@fontsource` 5.3.0 (SIL Open Font License, bundled, latin and latin-ext); Outfit and MuseoModerno are removed. The contrast, style, server and browser tests moved to the new values. Text on the red card, now hazard orange, is still ink, bold and large. Deployed 2026-11-23.
+
 ## Not done, on purpose
 
 - No push to any git remote.
